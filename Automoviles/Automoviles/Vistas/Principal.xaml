@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Automoviles.Vistas.Principal">
+    <ContentPage.Content>
+        <StackLayout Margin="5" BackgroundColor="LightPink"> <!--Color de fondo rosa para la pagina principal-->
+            <Label Text="AUTOMOVILES" HorizontalOptions="Center"/><!--Titulo-->
+            <!--El txtNombre sirve para que el usuario ingrese el nombre de la marca del auto que esta por buscar-->
+            <Entry Placeholder="Marca" x:Name="txtNombre"  />
+            <!--Botones para agregar  y buscar un automóvil-->
+            <Button x:Name="btnBuscar" VerticalOptions="Fill" Text="Buscar auto" />
+            <Button x:Name="btnRegistrar" VerticalOptions="Fill" Text="Registar nuevo auto"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

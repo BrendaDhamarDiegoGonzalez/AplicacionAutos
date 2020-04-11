@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Automoviles.Vistas.Registro">
+    <ContentPage.Content>
+        <StackLayout Margin="5" BackgroundColor="LightBlue"><!--Color azul para la página de registro-->
+            <Label Text="Registro de automoviles" HorizontalOptions="CenterAndExpand" BackgroundColor="WhiteSmoke"/>
+            <!--txtMarca para ingresar la marca del nuevo auto-->
+            <Entry Placeholder="Introduce la marca" x:Name="txtMarca" />
+            <!--txtColor para ingresar el color del nuevo auto-->
+            <Entry Placeholder="Introduce el color" x:Name="txtColor" />
+            <!--txtAnio para ingresar el año del nuevo auto-->
+            <Entry Placeholder="Introduce el año" x:Name="txtAnio" />
+            <!--Boton para guardar los datos introducidos-->
+            <Button Text="Guardar" x:Name="btnGuardar" HorizontalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

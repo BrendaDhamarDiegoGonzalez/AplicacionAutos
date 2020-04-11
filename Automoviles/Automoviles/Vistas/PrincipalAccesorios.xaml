@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Automoviles.Vistas.PrincipalAccesorios">
+    <ContentPage.Content>
+        <StackLayout Margin="5" BackgroundColor="LightCoral">
+            <!--Color de fondo -->
+            <Label Text="ACCESORIOS" HorizontalOptions="Center"/>
+            <!--Titulo-->
+            <!--El txtAccesorio sirve para que el usuario busque el accesorio por su nombre-->
+            <Entry Placeholder="Ingresa el nombre del accesorio" x:Name="txtAccesorio"  />
+            <!--Botones para agregar  y buscar un accesorio-->
+            <Button x:Name="btnBuscar" VerticalOptions="Fill" Text="Buscar " />
+            <Button x:Name="btnRegistrar" VerticalOptions="Fill" Text="Registar nuevo accesorio"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Automoviles.Vistas.PrincipalCliente">
+    <ContentPage.Content>
+        <StackLayout Margin="5" BackgroundColor="LightCoral">
+            <!--Color de fondo -->
+            <Label Text="CLIENTES" HorizontalOptions="Center"/>
+            <!--Titulo-->
+            <!--El txtCli sirve para que el usuario busque al cliente por su ALIAS-->
+            <Entry Placeholder="Ingresa el alias del cliente" x:Name="txtCli"  />
+            <!--Botones para agregar y buscar -->
+            <Button x:Name="btnBuscar" VerticalOptions="Fill" Text="Buscar " />
+            <Button x:Name="btnRegistrar" VerticalOptions="Fill" Text="Registar nuevo cliente"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

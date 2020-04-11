@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Automoviles.Vistas.DetalleCliente">
+    <ContentPage.Content>
+        <StackLayout Margin="5" BackgroundColor="LightGoldenrodYellow">
+            <!--Margen y color de fondo-->
+            <Label Text="Datos del cliente" HorizontalOptions="CenterAndExpand"/>
+            <!--Titulo-->
+            <Label x:Name="lblMensaje" HorizontalOptions="Center"/>
+            <!--Para mostrar el ID-->
+            <Entry x:Name="txtNombre" Placeholder="Nombre"/>
+            <!--Para mostrar el nombre del cliente -->
+            <Entry x:Name="txtApellido" Placeholder="Apellido"/>
+            <!--Para mostrar el apellido del cliente-->
+            <Entry x:Name="txtAlias" Placeholder="Alias"/>
+            <!--Para mostrar el alias del cliente -->
+            <Entry x:Name="txtNumTel" Placeholder="Número Telefónico"/>
+            <!--Para mostrar el número telefónico -->
+            <Entry x:Name="txtCorreo" Placeholder="Correo"/>
+            <!--Para mostrar el correo -->
+            <!--Botones para actualizar, eliminar y regresar-->
+            <Button Text="Actualizar" x:Name="btnActu"/>
+            <Button Text="Eliminar" x:Name="btnEliminar" />
+           
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

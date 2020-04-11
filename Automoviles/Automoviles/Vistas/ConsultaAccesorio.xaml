@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Automoviles.Vistas.ConsultaAccesorio">
+    <ContentPage.Content>
+        <StackLayout Margin="5" BackgroundColor="LightBlue">
+
+            <Label Text="Lista de accesorios" HorizontalOptions="Center" BackgroundColor="WhiteSmoke"/>
+            <ListView x:Name="ListaAcce">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--Muestra una lista de los registros que estan almacenados en la base mostrando 
+                        el nombre del accesorio y su color-->
+                        <TextCell Text="{Binding Nombre}" Detail="{Binding Color}"></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Automoviles.Vistas.DetalleAccesorio">
+    <ContentPage.Content>
+        <StackLayout Margin="5" BackgroundColor="LightGoldenrodYellow">
+            <Label Text="Datos del accesorio" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="lblMensaje" HorizontalOptions="Center"/>
+            <!--Para mostrar el ID-->
+            <Entry x:Name="txtNombre" Placeholder="Nombre"/>
+            <!--Para mostrar el nombre del accesorio -->
+            <Entry x:Name="txtCat" Placeholder="Categoria"/>
+            <!--Para mostrar la categoria del accesorio-->
+            <Entry x:Name="txtPie" Placeholder="Piezas"/>
+            <!--Para mostrar la cantidad de piezas del accesorio -->
+            <Entry x:Name="txtColor" Placeholder="Color"/>
+            <!--Para mostrar el color del accesorio -->
+            <Entry x:Name="txtPro" Placeholder="Proveedor"/>
+            <!--Para mostrar el nombre del proveedor del accesorio -->
+            <!--Botones para actualizar, eliminar y regresar-->
+            <Button Text="Actualizar" x:Name="btnActu"/>
+            <Button Text="Eliminar" x:Name="btnEliminar" />
+         
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Automoviles.Vistas.Detalle">
+    <ContentPage.Content>
+        <StackLayout Margin="5" BackgroundColor="LightGray">
+            <Label Text="Datos del auto" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="lblMensaje" HorizontalOptions="Center"/><!--Para mostrar el ID-->
+            <Entry x:Name="txtMarca" Placeholder="Marca"/><!--Para mostrar la marca -->
+            <Entry x:Name="txtColor" Placeholder="Color"/><!--Para mostrar el color-->
+            <Entry x:Name="txtAnio" Placeholder="Año"/><!--Para mostrar el año-->
+            <!--Botones para actualizar y eliminar-->
+            <Button Text="Actualizar" x:Name="btnActu"/>
+            <Button Text="Eliminar" x:Name="btnEliminar" />
+         
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

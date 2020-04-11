@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Automoviles.Vistas.RegistroCliente">
+    <ContentPage.Content>
+        <StackLayout Margin="5" BackgroundColor="LightBlue">
+            <!--Color y margen -->
+            <Label Text="Registro de clientes" HorizontalOptions="CenterAndExpand" BackgroundColor="WhiteSmoke"/>
+            <!-- Titulo -->
+            <!--txtNombre para ingresar el nombre del nuevo cliente-->
+            <Entry Placeholder="Introduce el nombre" x:Name="txtNombre" />
+            <!--txtApellido para ingresar el apelido del nuevo cliente-->
+            <Entry Placeholder="Introduce el apellido" x:Name="txtApellido" />
+            <!--txtAlias para ingresar el alias del nuevo cliente-->
+            <Entry Placeholder="Introduce el alias" x:Name="txtAlias" />
+            <!--txtNumTel para ingresar el numero telefónico del nuevo cliente-->
+            <Entry Placeholder="Introduce el numero telefónico" x:Name="txtNumTel" />
+            <!--txtCorreo para ingresar el correo del nuevo cliente-->
+            <Entry Placeholder="Introduce el correo electrónico" x:Name="txtCorreo" />
+            <!--Boton para guardar los datos introducidos-->
+            <Button Text="Guardar" x:Name="btnGuardar" HorizontalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

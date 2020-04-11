@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Automoviles.Vistas.Consulta">
+    <ContentPage.Content>
+        <StackLayout Margin="5" BackgroundColor="Lavender">
+            
+            <Label Text="Lista de autos" HorizontalOptions="Center" BackgroundColor="WhiteSmoke"/>
+            <ListView x:Name="ListaAutos">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--Muestra una lista de los registros que estan almacenados en la base mostrando la marca y el color-->
+                        <TextCell Text="{Binding Marca}" Detail="{Binding Color}"></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

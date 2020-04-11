@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Automoviles.Vistas.PrincipalApp">
+    <ContentPage.Content>
+        <!--Página diseñada para elegir la sección a manipular-->
+        <StackLayout Margin="5" BackgroundColor="LightSalmon">
+            <!--Color de fondo -->
+            <Label Text="AUTOMOVILES, ACCESORIOS Y CLIENTES" HorizontalOptions="Center"/>
+            <!--Titulo-->
+            
+            <!--Botones para elegir opción-->
+            <Button x:Name="btnAutos" VerticalOptions="Fill" Text="Autos" />
+            <Button x:Name="btnAccesorios" VerticalOptions="Fill" Text="Accesorios"/>
+            <Button x:Name="btnClientes" VerticalOptions="Fill" Text="Clientes"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
